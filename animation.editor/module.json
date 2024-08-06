@@ -1,0 +1,43 @@
+{
+    "main": {
+        "name": "Animations in Template",
+        "tagline": "Add animations directly in your tempaltes.",
+        "version": "1.0.0",
+        "icon": "platformer",
+        "authors": [{
+            "name": "Ulises Freitas",
+            "mail": "ulises.freitas@gmail.com"
+        }],
+        "categories": [
+            "media"
+        ]
+    },
+    "templateExtends": [
+        {
+            "name": "Animations",
+            "default": [],
+            "collect": true,
+            "collectScope": "intemplateanimations::templateanimations",
+            "key": "templateanimations",
+            "type": "table",
+            "fields": [
+              {
+                "name": "Name",
+                "key": "name",
+                "type": "text",
+                "required": true,
+                "default": "name",
+                "help": "This name must be unique in the whole game."
+              },
+              {
+                "name": "Frames",
+                "key": "frames",
+                "type": "text",
+                "required": true,
+                "default": "0",
+                "help": "Set the frames you want to use for the animation."
+              }
+            ]
+          }
+    ]
+}
